@@ -78,20 +78,17 @@ body {
   background-color: #d1ebee;
   font-family: 'Transducer Hairline', sans-serif;
 }
-a {
-  color: #000000;
-}
 #wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-a:hover {
-  color: #a5c0d3;
+a {
+  color: #000000;
 }
-a:visited {
-  color: #639ccb;
+a:hover {
+  color: #2073ad;
 }
 #animation {
   padding-top: 22px;
@@ -157,26 +154,35 @@ a:visited {
 }
 #content .menu-items .item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 90%;
-  min-height: 100px;
   margin: 20px;
   background-color: #e1eef8;
 }
-#content .menu-items .item img {
-  width: 100px;
-  height: 100px;
+#content .menu-items .item i {
+  width: 30px;
+  cursor: pointer;
+  user-select: none;
 }
-#content .menu-items .item .desc {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-#content .menu-items .item .desc h2 {
+#content .menu-items .item h2 {
   max-width: 100%;
   background-color: white;
   height: 30px;
   padding-left: 10px;
+}
+#content .menu-items .item h2 i {
+  margin-left: 0px;
+  margin-right: 5px;
+}
+#content .menu-items .item .desc {
+  display: none;
+  flex-direction: row;
+  width: 100%;
+  transition-duration: 5s;
+}
+#content .menu-items .item .desc img {
+  width: 100px;
+  height: 100px;
 }
 #content .menu-items .item .desc p {
   max-width: 100%;
