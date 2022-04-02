@@ -12,6 +12,9 @@ html,body{
 h1,h2,h3,h4,h5,h6,p{
   
 }
+a{
+  color: @colorLinks;
+}
 #wrapper{
   width: 100%;
   display: flex;
@@ -19,14 +22,13 @@ h1,h2,h3,h4,h5,h6,p{
   justify-content: center;
 }
 
-a{
-  color: @colorLinks;
-}
-
 a:hover{
   color: @colorHover;
 }
 
+a:visited{
+  color: @colorVisited;
+}
 
 #animation{
   padding-top: 22px;
