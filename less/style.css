@@ -175,10 +175,13 @@ a:hover {
   margin-right: 5px;
 }
 #content .menu-items .item .desc {
-  display: none;
+  display: flex;
   flex-direction: row;
   width: 100%;
-  transition-duration: 5s;
+  overflow: hidden;
+  max-height: 0px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 #content .menu-items .item .desc img {
   width: 100px;

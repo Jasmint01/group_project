@@ -119,11 +119,15 @@ a:hover{
       }
 
       .desc{
-        display: none;
+        display: flex;
         flex-direction: row;
         width: 100%;
 
-        transition-duration: 5s;
+        overflow: hidden;
+        max-height: 0px;
+
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
 
         img{
           width:100px;
