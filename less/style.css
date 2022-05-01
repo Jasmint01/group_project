@@ -286,7 +286,7 @@ a:hover {
   line-height: 2.5;
   content: "";
   display: table;
-  padding: 25px 4px 50px 45px;
+  padding: 25px 25px 50px;
   align-items: center;
 }
 #column\ 2 h1 {
@@ -303,5 +303,22 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 35px;
+}
+#column div {
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  #column img {
+    width: 90%;
+    display: flex;
+    padding-left: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
