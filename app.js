@@ -21,7 +21,7 @@ window.addEventListener("resize", function(){
 });
 
 for(let i=0;i<arrows.length;i++){
-    arrows[i].addEventListener("click",function(){
+    arrows[i].parentElement.addEventListener("click",function(){
         let arrow_block=arrows[i].parentElement.nextElementSibling;
         if(arrow_block.style.maxHeight=="0px"){ //using max height since we don't need a specific height. height="auto" does not allow for animation
             arrows[i].classList.remove("fa-caret-right");
